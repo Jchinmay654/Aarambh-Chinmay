@@ -8,7 +8,5 @@ RUN unzip eflyer.zip
 RUN rm -rf eflyer.zip &&\ 
     cp -rf eflyer/* . &&\
     rm -rf eflyer
-    mkdir /var/www/html/secure &&\
-    touch /var/www/html/secure/gaurav756
 EXPOSE 80
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND
